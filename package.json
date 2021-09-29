@@ -1,7 +1,7 @@
 {
   "name": "fend-hoandc",
   "version": "0.1.0",
-  "homepage": "https://ANDC-Projects.github.io/ANDC-Alumni-Data/tree/main/Front-End/front-beta-1",
+  "homepage": "https://github.com/ANDC-Projects/fend-hoandc",
   "private": true,
   "dependencies": {
     "@coreui/react": "^4.0.0-rc.2",
