@@ -3,7 +3,7 @@ import './App.css';
 import '@coreui/coreui/dist/css/coreui.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link
