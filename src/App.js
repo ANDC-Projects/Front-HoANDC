@@ -6,7 +6,7 @@ import {
   HashRouter as Router,
   Switch,
   Route,
-  Link
+  // Link
 } from "react-router-dom";
 import {NavMenu} from './Components/NavMenu';
 import {Form} from './Components/Form';
@@ -23,7 +23,6 @@ function App() {
         <Route exact path='/Form' component={Form} />
         <Route exact path='/About' component={About} />
       </Switch>
-
     </Router>
   );
 }
