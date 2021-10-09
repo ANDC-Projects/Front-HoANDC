@@ -2,8 +2,7 @@ import React from 'react';
 import {
   HashRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import {Page1} from './Forms/Page1';
 import {Page2} from './Forms/Page2';
