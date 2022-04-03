@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import '@coreui/coreui/dist/css/coreui.css';
+// import '@coreui/coreui/dist/css/coreui.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   HashRouter as Router,
@@ -9,7 +9,8 @@ import {
   // Link
 } from "react-router-dom";
 import {NavMenu} from './Components/NavMenu';
-import {Form} from './Components/Form';
+// import { RegisterForm } from './Components/RegisterForm';
+import { RegisterForm } from './Components/Forms-components';
 import {Home} from './Components/Home';
 import {About} from './Components/About';
 import '@fontsource/roboto/300.css';
@@ -20,8 +21,8 @@ function App() {
       <NavMenu />
       <Switch>
         <Route exact path='/' component={Home} />
-        <Route exact path='/Form' component={Form} />
-        <Route exact path='/About' component={About} />
+        <Route exact path='/register' component={RegisterForm} />
+        <Route exact path='/about' component={About} />
       </Switch>
     </Router>
   );

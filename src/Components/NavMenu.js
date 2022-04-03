@@ -1,57 +1,104 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 export const NavMenu = () => {
-    return (
-
-<nav className="navbar navbar-expand-lg navbar-light bg-light"
-  style={{display:'block',position:'fixed',top:'0', left:'0', right:'0', padding:'10px 50px 10px 10px'}}
->
-  <div className="container-fluid">
-  <Link className="navbar-brand" to='\' style={{fontWeight:'bold'}}>Humans of ANDC</Link>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to='/'>Home</Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" to='/About'>About</Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" to='/Form'>Form</Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" to='/People'>People</Link>
-        </li>
-        <li className="nav-item dropdown">
-          <Link className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            More
-          </Link>
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><Link className="dropdown-item" href="#">Your Peers</Link></li>
-            <li><Link className="dropdown-item" href="#">Edit Profile</Link></li>
-            <li><Link className="dropdown-item" href="#">Resource People</Link></li>
-            <li><hr className="dropdown-divider" /></li>
-            <li><Link className="dropdown-item" href="#">
-              <button type="button" className="btn btn-outline-danger " >
-              Admin
-              </button>
-            </Link></li>
+  return (
+    <nav
+      className="navbar navbar-expand-lg navbar-light bg-light"
+      style={{
+        display: "block",
+        position: "fixed",
+        top: "0",
+        left: "0",
+        right: "0",
+        padding: "10px 50px 10px 10px",
+      }}
+    >
+      <div className="container-fluid">
+        <Link className="navbar-brand" to="/" style={{ fontWeight: "bold" }}>
+          Humans of ANDC
+        </Link>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <Link className="nav-link active" aria-current="page" to="/">
+                Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/About">
+                About
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/register">
+                Form
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/People">
+                People
+              </Link>
+            </li>
+            <li className="nav-item dropdown">
+              <Link
+                className="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More
+              </Link>
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <Link className="dropdown-item">Your Peers</Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item">Edit Profile</Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item">Resource People</Link>
+                </li>
+                <li>
+                  <hr className="dropdown-divider" />
+                </li>
+                <li>
+                  <Link className="dropdown-item">
+                    <button type="button" className="btn btn-outline-danger ">
+                      Admin
+                    </button>
+                  </Link>
+                </li>
+              </ul>
+            </li>
           </ul>
-        </li>
-      </ul>
-      <form className="d-flex">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-        <button className="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
-    )
-}
-
+          <form className="d-flex">
+            <input
+              className="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button className="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  );
+};
 
 // <nav classNameName="navbar navbar-expand-lg navbar-dark bg-dark display-block position-fixed" style={{top:'0', left:'0', right:'0', padding:'10px 50px 10px 10px'}}>
 // <div classNameName="container-fluid">
