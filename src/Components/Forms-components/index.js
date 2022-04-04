@@ -9,7 +9,7 @@ import { useSelector } from "react-redux";
 export const RegisterForm = () => {
   const activeIndex = useSelector((state) => state.registerReducer.activeIndex);
   return (
-    <div className="text-center">
+    <div className="register-form text-center">
       <h1 className="display-1" style={{ fontWeight: "bold" }}>
         Form
       </h1>

@@ -20,7 +20,6 @@ export const Page1 = () => {
           firstName: "",
           lastName: "",
           email: "",
-          phone: "",
           yearOfGraduation: "",
           course: "",
         }}
