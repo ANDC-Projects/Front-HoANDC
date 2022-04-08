@@ -25,7 +25,7 @@ export const Page1 = () => {
         }}
         onSubmit={(values, { setSubmitting }) => {
           console.log(values);
-          setSubmitting(false);
+          // setSubmitting(false);
         }}
       >
         {(props) => (
@@ -89,6 +89,7 @@ export const Page1 = () => {
               className="btn btn-danger"
               onClick={() => {
                 dispatch(setActiveIndex(1));
+                props.handleSubmit();
               }}
             >
               Next

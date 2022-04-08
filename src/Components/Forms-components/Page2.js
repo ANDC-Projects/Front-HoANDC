@@ -11,14 +11,11 @@ export const Page2 = () => {
       Page 2
       <Formik
         initialValues={{
-          hasDiploma: "no",
-          isPostGrad: "no",
-          isPhD: "no",
-          isEmployee: "no",
+          // hasDiploma: "no",
           postGrad: [
             {
               course: "",
-              yearOfCompletion: 1947,
+              yearOfGraduation: 0,
               institute: "",
             },
           ],
@@ -57,7 +54,7 @@ export const Page2 = () => {
               {({ insert, remove, push }) => (
                 <div>
                   {props.values.postGrad.length >= 0 &&
-                    props.values.postGrad.map((postGrad, index) => {
+                    props.values.postGrad.map((postGrad, index) => (
                       <div className="form-group" key={index}>
                         Details of your Postgraduation
                         <br />
@@ -93,8 +90,8 @@ export const Page2 = () => {
                             remove
                           </button>
                         </div>
-                      </div>;
-                    })}
+                      </div>
+                    ))}
                   <button
                     type="button"
                     className=""
@@ -121,7 +118,7 @@ export const Page2 = () => {
               type="submit"
               className="btn btn-danger"
               onClick={() => {
-                dispatch(setActiveIndex(1));
+                dispatch(setActiveIndex(2));
               }}
             >
               Next
