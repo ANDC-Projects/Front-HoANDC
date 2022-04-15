@@ -46,8 +46,8 @@ export const NavMenu = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/People">
-                People
+              <Link className="nav-link" to="/Login">
+                Login
               </Link>
             </li>
             <li className="nav-item dropdown">

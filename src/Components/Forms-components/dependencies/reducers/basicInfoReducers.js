@@ -1,8 +1,5 @@
 export const basicInfo = (
-  state = {
-    name: "",
-    lastname: "",
-  },
+  state = {},
   actions
 ) => {
   switch (actions.type) {
