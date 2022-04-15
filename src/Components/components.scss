@@ -1,0 +1,91 @@
+$primary-color: #1B262C;
+$compliment-color: #BBE1FA;
+$sub-primary-color: #0F4C75;
+$sub-compliment-color: #3282B8;
+
+.home {
+  height: 100vh;
+  width: auto;
+  /* background-image: url('./media-files/andc1.jpg');
+  background-size: cover; */
+  display: grid;
+  grid-template-columns: 60% 40%;
+  /* justify-content: center; */
+  align-items: center;
+  // background-color: $primary-color;
+  color: $primary-color;
+  z-index: 1;
+  overflow-x: hidden;
+}
+.home .container{
+  text-align: left;
+  // background-color: #12c2e9;
+  padding: 0 6rem;
+}
+.register-btn{
+  border-radius: 20px;
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  font-weight: 700;
+}
+.home h1 {
+  /* margin-top: 30px; */
+  font-weight: 900;
+}
+.home .display-1 a {
+  text-decoration: none;
+  color: #125299;
+  position: relative;
+}
+
+.home a::after {
+  /* content: ""; */
+  display: block;
+  position: absolute;
+  height: 8%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #12c2e9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f64f59,
+    #c471ed,
+    #12c2e9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f64f59,
+    #c471ed,
+    #12c2e9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.home .imgBox {
+  /* position: relative; */
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: left;
+  position: relative;
+  top: 0;
+  z-index: 3;
+}
+.home .imgBox img {
+  margin: 0 0 0 2rem;
+  border-radius: 20%;
+  height: 80vh;
+  
+}
+.home .imgBox ::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0.3rem;
+  left: 0;
+  height: 20rem;
+  width: 230rem;
+  /* background-color: brown; */
+  z-index: -1;
+  border-radius: 40px;
+  background: $sub-compliment-color;
+}

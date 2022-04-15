@@ -4,7 +4,7 @@ import { BasicInfo } from "./BasicInfo";
 import { HigherEducation } from "./HigherEducation";
 import { WorkExperience } from "./WorkExperience";
 import { ContactInfo } from "./ContactInfo";
-import "./forms.css";
+import "./forms.scss";
 import { useSelector, useDispatch } from "react-redux";
 import { setActiveIndex } from "./dependencies/actions/setActiveIndex";
 
@@ -14,10 +14,14 @@ export const RegisterForm = () => {
   const [header, setheader] = useState("Personal Info");
   return (
     <div className="register-form text-center">
-      <h3 className="display-3" style={{ fontWeight: "bold" }}>
-        Sign In
-      </h3>
+      <div className="container">
+      <h1>Tell us about Yourself</h1>
+      </div>
+      <div></div>
       <div className="form-parent-box">
+        <h3 className="display-3" style={{ fontWeight: "bold" }}>
+          Sign In
+        </h3>
         {activeIndex == 1 && <BasicInfo />}
         {activeIndex == 2 && <HigherEducation />}
         {activeIndex == 3 && <WorkExperience />}
