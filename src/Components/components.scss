@@ -34,8 +34,10 @@ $sub-compliment-color: #3282B8;
 }
 .home .display-1 a {
   text-decoration: none;
-  color: #125299;
+  -webkit-text-stroke: 3px #125299;
+  color: transparent;
   position: relative;
+  
 }
 
 .home a::after {

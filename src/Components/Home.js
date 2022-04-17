@@ -13,7 +13,7 @@ export const Home = () => {
         <div className="container">
           <h1 className="display-1 ">
             Welcome to the Alumni Portal <br />
-            of <a href="https://www.andcollege.du.ac.in/"> ANDC</a>.
+            of <a href="https://www.andcollege.du.ac.in/" target="_blank" > ANDC</a>.
           </h1>
           <p className="lead">
             Welcome to the prebuild version of our website.
